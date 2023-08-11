@@ -23,13 +23,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
+import { SearchHomeComponent } from './pages/home/components/search-home/search-home.component';
+import { MembershipHomeComponent } from './pages/home/components/membership-home/membership-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    SearchHomeComponent,
+    MembershipHomeComponent
   ],
   imports: [
     BrowserModule,

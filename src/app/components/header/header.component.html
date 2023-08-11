@@ -1,11 +1,11 @@
-<mat-toolbar class="max-w justify-between px-0">
-  <div class="space-x-2">
-    <a routerLink="home">wework</a>
-    <a mat-button>Explorar</a>
-    <a mat-button>Espacios</a>
-    <a mat-button>Membresías</a>
-    <a mat-button>Eventos</a>
-    <a mat-button>Explorar</a>
+<mat-toolbar class="top-0 w-full z-50 sticky justify-between" style="background-color: white;">
+  <div class="space-x-4 flex justify-between items-center">
+    <a class="text-base" routerLink="home"><img src="../../../assets/wework-logo.svg" alt=""></a>
+    <a class="text-base" mat-button>Explorar</a>
+    <a class="text-base" mat-button>Espacios</a>
+    <a class="text-base" mat-button>Membresías</a>
+    <a class="text-base" mat-button>Eventos</a>
+    <a class="text-base" mat-button>Explorar</a>
     <button
       mat-button
       [matMenuTriggerFor]="menu1"
@@ -40,9 +40,11 @@
   </div>
 
   <div class="ml-auto">
-    <a mat-button style="background-color: blue">
-      Contactenos
-      <mat-icon iconPositionEnd>keyboard_arrow_right</mat-icon>
-    </a>
+    <button class="w-full py-2 px-4 bg-custom-blue text-white">
+      <div class="flex items-center justify-between">
+        <span>Contactenos</span>
+        <mat-icon iconPositionEnd>keyboard_arrow_right</mat-icon>
+      </div>
+    </button>
   </div>
 </mat-toolbar>
