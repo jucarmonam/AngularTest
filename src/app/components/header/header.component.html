@@ -1,0 +1,48 @@
+<mat-toolbar class="max-w justify-between px-0">
+  <div class="space-x-2">
+    <a routerLink="home">wework</a>
+    <a mat-button>Explorar</a>
+    <a mat-button>Espacios</a>
+    <a mat-button>Membresías</a>
+    <a mat-button>Eventos</a>
+    <a mat-button>Explorar</a>
+    <button
+      mat-button
+      [matMenuTriggerFor]="menu1"
+      #menuTrigger1="matMenuTrigger"
+      (mouseenter)="menuTrigger1.openMenu()"
+    >
+      <span>WeWork</span>
+      <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu1="matMenu">
+      <div (mouseleave)="menuTrigger1.closeMenu()">
+        <button mat-menu-item>Conoce WeWork</button>
+        <button mat-menu-item>Carreras</button>
+        <button mat-menu-item>Sala de prensa</button>
+      </div>
+    </mat-menu>
+
+    <button
+      mat-button
+      [matMenuTriggerFor]="menu2"
+      #menuTrigger2="matMenuTrigger"
+      (mouseenter)="menuTrigger2.openMenu()"
+    >
+      <span>Socios</span>
+      <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu2="matMenu">
+      <div (mouseleave)="menuTrigger2.closeMenu()">
+        <button mat-menu-item>Brokers</button>
+      </div>
+    </mat-menu>
+  </div>
+
+  <div class="ml-auto">
+    <a mat-button style="background-color: blue">
+      Contactenos
+      <mat-icon iconPositionEnd>keyboard_arrow_right</mat-icon>
+    </a>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,51 @@
+<div class="flex flex-row justify-between">
+  <div class="w-1/2">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <p class="text-6xl font-serif">
+            Espacios de trabajo flexibles que se ajustan a lo que tú y tu
+            compañía necesitan
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="flex flex-col">
+        <div>
+          <nav>¿Qué necesitas?</nav>
+        </div>
+        <div>
+          <mat-button-toggle-group #group="matButtonToggleGroup">
+            <mat-button-toggle value="left" aria-label="Text align left">
+              <div class="flex flex-col items-center text-center">
+                <mat-icon svgIcon="pc-desk" class="w-12 h-12"></mat-icon>
+                <span class="mt-2 text-xl">Espacio para trabajar</span>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="center" aria-label="Text align center">
+              <div class="flex flex-col items-center text-center">
+                <mat-icon svgIcon="teach-class" class="w-12 h-12"></mat-icon>
+                <span class="mt-2 text-xl">Sala de reunión/workshop</span>
+              </div>
+            </mat-button-toggle>
+            <mat-button-toggle value="right" aria-label="Text align right">
+              <div class="flex flex-col items-center text-center">
+                <mat-icon svgIcon="star-podium" class="w-12 h-12"></mat-icon>
+                <span class="mt-2 text-xl">Espacio para evento</span>
+              </div>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+        <div>
+          <input matInput placeholder="Ingresa tu ciudad" />
+          <button mat-raised-button color="primary">
+            Buscar
+            <mat-icon iconPositionEnd>arrow_right</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="w-1/2">
+    <img src="../../../assets/MainImage.webp" />
+  </div>
+</div>
