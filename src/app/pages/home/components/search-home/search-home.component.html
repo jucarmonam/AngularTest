@@ -40,8 +40,13 @@
             <input
               matInput
               placeholder="Ingresa tu ciudad"
+              [(ngModel)]="searchTerm" 
+              (input)="searchCities()"
               class="w-full h-full"
             />
+            <ul>
+              <li *ngFor="let city of cities">{{ city }}</li>
+            </ul>
           </div>
           <div class="w-2/5">
             <button
