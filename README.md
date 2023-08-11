@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
+The idea of the project is to design and develop a mockup of the wework webpage https://www.wework.com.co/ trying to focus on speed end efficiency 
+
+## Installation
+
+### Prerequisites
+
+* You should have installed Node.js and npm, additionally, Angular CLI will be very important
+* Now you can clone the project
+* Go to the root of the project and in a terminal type "npm install"
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
