@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
 The idea of the project is to design and develop a mockup of the website https://www.wework.com.co/ trying to focus on speed and efficiency. 
-My focus was to recognize and modularize the web page in components and pages trying to organize them in the best way the project with the objective of having an organized and easy-to-maintain project because the components, in general, should be in charge of only one functionality, besides looking for the reuse of components if it's possible.
+My focus was to recognize and modularize the web page in components and pages trying to organize them in the best way the project with the objective of having an organized and easy-to-maintain project, based on the idea that the components, in general, should be responsible for only one functionality, besides looking for the reuse of components if it's possible.
 
 ## Installation
 
